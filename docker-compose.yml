@@ -85,6 +85,7 @@ services:
       docker.for.lin.host.internal: 172.16.238.1
       docker.for.lin.localhost: 172.16.238.1
 
+    hostname: bind
     networks:
       app_net:
         ipv4_address: 172.16.238.100
@@ -155,6 +156,7 @@ services:
       docker.for.lin.host.internal: 172.16.238.1
       docker.for.lin.localhost: 172.16.238.1
 
+    hostname: php
     networks:
       app_net:
         ipv4_address: 172.16.238.10
@@ -259,6 +261,7 @@ services:
       - "${LOCAL_LISTEN_ADDR}${HOST_PORT_HTTPD}:80"
       - "${LOCAL_LISTEN_ADDR}${HOST_PORT_HTTPD_SSL}:443"
 
+    hostname: httpd
     networks:
       app_net:
         ipv4_address: 172.16.238.11
@@ -324,6 +327,7 @@ services:
       # [local-machine:]local-port:docker-port
       - "${LOCAL_LISTEN_ADDR}${HOST_PORT_MYSQL}:3306"
 
+    hostname: mysql
     networks:
       app_net:
         ipv4_address: 172.16.238.12
@@ -367,6 +371,7 @@ services:
       # [local-machine:]local-port:docker-port
       - "${LOCAL_LISTEN_ADDR}${HOST_PORT_PGSQL}:5432"
 
+    hostname: pgsql
     networks:
       app_net:
         ipv4_address: 172.16.238.13
@@ -397,6 +402,7 @@ services:
       # [local-machine:]local-port:docker-port
       - "${LOCAL_LISTEN_ADDR}${HOST_PORT_REDIS}:6379"
 
+    hostname: redis
     networks:
       app_net:
         ipv4_address: 172.16.238.14
@@ -424,6 +430,7 @@ services:
       # [local-machine:]local-port:docker-port
       - "${LOCAL_LISTEN_ADDR}${HOST_PORT_MEMCD}:11211"
 
+    hostname: memcd
     networks:
       app_net:
         ipv4_address: 172.16.238.15
@@ -451,6 +458,7 @@ services:
       # [local-machine:]local-port:docker-port
       - "${LOCAL_LISTEN_ADDR}${HOST_PORT_MONGO}:27017"
 
+    hostname: mongo
     networks:
       app_net:
         ipv4_address: 172.16.238.16
