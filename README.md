@@ -90,6 +90,9 @@ $ vim .env
 
 # Start all containers
 $ docker-compose up
+
+# Stop all containers
+$ docker-compose down
 ```
 
 #### Selective start
