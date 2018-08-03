@@ -79,7 +79,7 @@ You are up and running in four simple steps:
 
 ```shell
 # Get the devilbox
-$ git clone https://github.com/cytopia/devilbox
+$ git clone https://github.com/iGorEremenko/devilbox
 $ cd devilbox
 
 # Create docker-compose environment file
